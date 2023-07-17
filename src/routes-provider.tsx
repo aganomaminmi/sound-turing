@@ -11,6 +11,7 @@ import { SomethingAboutUs } from './pages/Music/SomethingAboutUs'
 import { Voyager } from './pages/Music/Voyager'
 import { FaceToFace } from './pages/Music/FaceToFace'
 import { PlanetLoop } from './pages/Music/PlanetLoop'
+import { Music } from './pages/Music'
 
 
 export const RoutesProvider = () => {
@@ -24,10 +25,11 @@ export const RoutesProvider = () => {
         <Route path="/turing-sound" element={<TuringSound />} />
         <Route path="/fft" element={<FFTPage />} />
         <Route path="/music" >
+          <Route path=":id" element={<Music />} />
           <Route path="digital-love" element={<DigitalLove />} />
           <Route path="one-more-time" element={<OneMoreTime />} />
           <Route path="voyager" element={<Voyager />} />
-          <Route path="something-about-us" element={<SomethingAboutUs/>} />
+          <Route path="something-about-us" element={<SomethingAboutUs />} />
           <Route path="face-to-face" element={<FaceToFace />} />
           <Route path="planet-loop" element={<PlanetLoop />} />
         </Route>

@@ -23,7 +23,7 @@ export const Music: React.FC = () => {
       return
     }
     function getFileUrl(name: string) {
-      return `/dir/music-resource/${name}.m4a`
+      return `/music-resource/${name}.m4a`
     }
     const url = getFileUrl(params.id)
 

@@ -12,6 +12,7 @@ export default defineConfig({
       { find: '@/', replacement: '/src/' }
     ]
   },
+  base: '/sound-turing/',
   build: {
     outDir: 'docs',
   },
